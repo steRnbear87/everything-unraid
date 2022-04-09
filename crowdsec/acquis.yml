@@ -1,0 +1,19 @@
+filenames:
+  - /crowdsec/log/traefik.log
+labels:
+  type: traefik
+---
+filenames:
+  - /var/log/auth.log
+labels:
+  type: syslog
+---
+filenames:
+  - /crowdsec/log/authelia.log
+labels:
+  type: authelia
+---
+filenames:
+  - /crowdsec/log/vaultwarden.log
+labels:
+  type: vaultwarden

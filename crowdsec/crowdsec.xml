@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>crowdsec</Name>
+  <Repository>crowdsecurity/crowdsec</Repository>
+  <Registry>https://hub.docker.com/r/crowdsecurity/crowdsec/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/94096-support-ibracorp-all-images-and-files/</Support>
+  <Project>https://github.com/crowdsecurity/crowdsec</Project>
+  <Overview>Crowdsec - An open-source, lightweight agent to detect and respond to bad behaviours.&#xD;
+&#xD;
+Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+&#xD;
+https://hub.docker.com/r/crowdsecurity/crowdsec/</Overview>
+  <Category>Security:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://app.crowdsec.net/favicon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1649465451</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Crowdsec - An open-source, lightweight agent to detect and respond to bad behaviours.&#xD;
+&#xD;
+Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+&#xD;
+https://hub.docker.com/r/crowdsecurity/crowdsec/</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>28080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/crowdsec/</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/crowdsec/log/</HostDir>
+      <ContainerDir>/crowdsec/log</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>1000</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>crowdsecurity/traefik crowdsecurity/http-cve LePresidente/authelia Dominic-Wagner/vaultwarden</Value>
+      <Name>COLLECTIONS</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Path" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/crowdsec/</Config>
+  <Config Name="Crowdsec Logs" Target="/crowdsec/log" Default="" Mode="rw" Description="Container Path:/crowdsec/log" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/crowdsec/log/</Config>
+  <Config Name="Port" Target="8080" Default="" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="true" Mask="false">28080</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="true" Mask="false">1000</Config>
+  <Config Name="Authelia Collection" Target="COLLECTIONS" Default="" Mode="" Description="Container Variable: COLLECTIONS" Type="Variable" Display="always" Required="false" Mask="false">crowdsecurity/traefik crowdsecurity/http-cve LePresidente/authelia Dominic-Wagner/vaultwarden</Config>
+</Container>
