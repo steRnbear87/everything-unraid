@@ -76,6 +76,11 @@ To start the initial setup, navigate to https://&amp;lt;your server&amp;gt;/if/f
     </Variable>
     <Variable>
       <Value/>
+      <Name>AUTHENTIK_REDIS__PASSWORD</Name>
+      <Mode/>
+    </Variable>
+	<Variable>
+      <Value/>
       <Name>AUTHENTIK_POSTGRESQL__HOST</Name>
       <Mode/>
     </Variable>
@@ -117,11 +122,6 @@ To start the initial setup, navigate to https://&amp;lt;your server&amp;gt;/if/f
     <Variable>
       <Value/>
       <Name>AUTHENTIK_SECRET_KEY</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>AUTHENTIK_REDIS__PASSWORD</Name>
       <Mode/>
     </Variable>
   </Environment>
