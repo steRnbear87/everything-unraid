@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>true</Privileged>
-  <Support>https://discord.gg/VWAG7rZ</Support>
+  <Support>https://discord.com/invite/jg33eMhnj6</Support>
   <Project>https://github.com/goauthentik/authentik</Project>
   <Overview>authentik is an open-source Identity Provider focused on flexibility and versatility. You can use authentik in an existing environment to add support for new protocols, implement sign-up/recovery/etc. in your application so you don't have to deal with it, and many other things.&#xD;
 &#xD;
@@ -73,6 +73,11 @@ To start the initial setup, navigate to https://&amp;lt;your server&amp;gt;/if/f
       <Mode/>
     </Variable>
     <Variable>
+      <Value/>
+      <Name>AUTHENTIK_REDIS__PASSWORD</Name>
+      <Mode/>
+    </Variable>
+	<Variable>
       <Value>postgresql14</Value>
       <Name>AUTHENTIK_POSTGRESQL__HOST</Name>
       <Mode/>
@@ -115,11 +120,6 @@ To start the initial setup, navigate to https://&amp;lt;your server&amp;gt;/if/f
     <Variable>
       <Value/>
       <Name>AUTHENTIK_SECRET_KEY</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>AUTHENTIK_REDIS__PASSWORD</Name>
       <Mode/>
     </Variable>
   </Environment>

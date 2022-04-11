@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/beryju/authentik/</Support>
+  <Support>https://discord.com/invite/jg33eMhnj6</Support>
   <Project>https://github.com/goauthentik/authentik</Project>
   <Overview>authentik is an open-source Identity Provider focused on flexibility and versatility. You can use authentik in an existing environment to add support for new protocols, implement sign-up/recovery/etc. in your application so you don't have to deal with it, and many other things.&#xD;
 &#xD;
@@ -63,6 +63,11 @@ This is the worker. You will need the Authentik app which is the server. </Descr
       <Mode/>
     </Variable>
     <Variable>
+      <Value/>
+      <Name>AUTHENTIK_REDIS__PASSWORD</Name>
+      <Mode/>
+    </Variable>
+	<Variable>
       <Value>postgresql14</Value>
       <Name>AUTHENTIK_POSTGRESQL__HOST</Name>
       <Mode/>
@@ -90,11 +95,6 @@ This is the worker. You will need the Authentik app which is the server. </Descr
     <Variable>
       <Value/>
       <Name>AUTHENTIK_SECRET_KEY</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>AUTHENTIK_REDIS__PASSWORD</Name>
       <Mode/>
     </Variable>
   </Environment>
