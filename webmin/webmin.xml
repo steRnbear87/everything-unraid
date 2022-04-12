@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>webmin</Name>
+  <Repository>johanp/webmin</Repository>
+  <Registry>https://hub.docker.com/r/johanp/webmin/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/webmin/webmin/issues</Support>
+  <Project>https://github.com/webmin/webmin</Project>
+  <Overview>Webmin is a web-based system administration tool for Unix-like servers, and services with over 1,000,000 installations worldwide. Using it, it is possible to configure operating system internals, such as users, disk quotas, services or configuration files, as well as modify, and control open-source apps, such as BIND DNS Server, Apache HTTP Server, PHP, MySQL, and many more.&#xD;
+&#xD;
+Default Login is root:password</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:10000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/w5IHW8z.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1649779757</DateInstalled>
+  <DonateText>Help support my work by buying me a drink</DonateText>
+  <DonateLink>https://tinyurl.com/zeksdonate</DonateLink>
+  <Description>Webmin is a web-based system administration tool for Unix-like servers, and services with over 1,000,000 installations worldwide. Using it, it is possible to configure operating system internals, such as users, disk quotas, services or configuration files, as well as modify, and control open-source apps, such as BIND DNS Server, Apache HTTP Server, PHP, MySQL, and many more.&#xD;
+&#xD;
+Default Login is root:password</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>10000</HostPort>
+        <ContainerPort>10000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment/>
+  <Labels/>
+  <Config Name="WebUI" Target="10000" Default="" Mode="tcp" Description="Container Port: 10000" Type="Port" Display="always" Required="true" Mask="false">10000</Config>
+</Container>
