@@ -13,7 +13,7 @@
 &#xD;
 You will need the authentik-worker app.&#xD;
 &#xD;
-To start the initial setup, navigate to https://&amp;lt;your server&amp;gt;/if/flow/initial-setup/. There you will be prompted to set a password for the akadmin user.&#xD;
+To start the initial setup, navigate to https://your-server-ip:9000/if/flow/initial-setup/. There you will be prompted to set a password for the akadmin user.&#xD;
 </Overview>
   <Category>Security:</Category>
   <WebUI>http://[IP]:[PORT:9000]</WebUI>
@@ -29,7 +29,7 @@ To start the initial setup, navigate to https://&amp;lt;your server&amp;gt;/if/f
 &#xD;
 You will need the authentik-worker app.&#xD;
 &#xD;
-To start the initial setup, navigate to https://&amp;lt;your server&amp;gt;/if/flow/initial-setup/. There you will be prompted to set a password for the akadmin user.&#xD;
+To start the initial setup, navigate to https://your-server-ip:9000/if/flow/initial-setup/. There you will be prompted to set a password for the akadmin user.&#xD;
 </Description>
   <Networking>
     <Mode>bridge</Mode>
