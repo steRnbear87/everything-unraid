@@ -35,7 +35,13 @@ Default Login is root:password</Description>
       </Port>
     </Publish>
   </Networking>
-  <Data/>
+  <Data>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
   <Environment/>
   <Labels/>
   <Config Name="WebUI" Target="10000" Default="" Mode="tcp" Description="Container Port: 10000" Type="Port" Display="always" Required="true" Mask="false">10000</Config>
