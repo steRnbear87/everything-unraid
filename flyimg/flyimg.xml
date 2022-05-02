@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>flyimg</Name>
+  <Repository>flyimg/flyimg-build</Repository>
+  <Registry>https://hub.docker.com/r/flyimg/flyimg-build/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/flyimg/flyimg-build/</Support>
+  <Project>https://github.com/flyimg/flyimg</Project>
+  <Overview>The full Flyimg application as single docker image&#xD;
+&#xD;
+Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+&#xD;
+https://hub.docker.com/r/flyimg/flyimg-build/</Overview>
+  <Category>Tools: MediaApp:Photos MediaServer:Photos</Category>
+  <WebUI>http://[IP]:[PORT:9090]</WebUI>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/Q7NyG0Y.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1651469636</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>The full Flyimg application as single docker image&#xD;
+&#xD;
+Image resizing, cropping and compression on the fly with the impressive MozJPEG compression algorithm. One Docker container to build your own Cloudinary-like service.&#xD;
+&#xD;
+https://hub.docker.com/r/flyimg/flyimg-build/</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9090</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/flyimg</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Port" Target="80" Default="9000" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="false" Mask="false">9090</Config>
+  <Config Name="AppData" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/flyimg</Config>
+</Container>
