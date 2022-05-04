@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>crowdsec-dashboard</Name>
+  <Repository>igoramadas/crowdsec-dashboard</Repository>
+  <Registry>https://hub.docker.com/r/igoramadas/crowdsec-dashboard</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/VWAG7rZ</Support>
+  <Project>https://github.com/crowdsecurity/example-docker-compose</Project>
+  <Overview>A build of the crowdsec dashboard to conveniently use in my personal setup.&#xD;
+&#xD;
+Username: crowdsec@crowdsec.net&#xD;
+Password: !!Cr0wdS3c_M3t4b4s3??&#xD;
+&#xD;
+&#xD;
+</Overview>
+  <Category>Security: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/bFccycG.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1651633844</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>A build of the crowdsec dashboard to conveniently use in your personal setup.&#xD;
+&#xD;
+Username: crowdsec@crowdsec.net&#xD;
+Password: !!Cr0wdS3c_M3t4b4s3??&#xD;
+&#xD;
+&#xD;
+</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3000</HostPort>
+        <ContainerPort>3000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/crowdsec/data/</HostDir>
+      <ContainerDir>/metabase-data/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/crowdsec/log</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>/data/metabase.db</Value>
+      <Name>MB_DB_FILE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>crowdsec:8080</Value>
+      <Name>CROWDSEC_AGENT_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1000</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="WebUi" Target="3000" Default="" Mode="tcp" Description="Container Port: 3000" Type="Port" Display="always" Required="true" Mask="false">3000</Config>
+  <Config Name="Metabase DB" Target="MB_DB_FILE" Default="" Mode="" Description="Container Variable: MB_DB_FILE" Type="Variable" Display="always" Required="false" Mask="false">/data/metabase.db</Config>
+  <Config Name="Metabase DB" Target="/metabase-data/" Default="" Mode="rw" Description="Container Path: /metabase-data/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/crowdsec/data/</Config>
+  <Config Name="Crowdsec Logs" Target="/crowdsec/log" Default="" Mode="rw" Description="Container Path: /crowdsec/log" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Crowdsec Agent" Target="CROWDSEC_AGENT_HOST" Default="" Mode="" Description="Container Variable: CROWDSEC_AGENT_HOST" Type="Variable" Display="always" Required="true" Mask="false">crowdsec:8080</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced-hide" Required="false" Mask="false">1000</Config>
+</Container>
